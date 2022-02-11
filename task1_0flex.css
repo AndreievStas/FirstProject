@@ -1,0 +1,29 @@
+#main {
+    display: flex;
+    height: 97vh;
+}
+
+.div {
+    width: 25%;
+    height: 33.333%;
+}
+
+#first {
+    background-color: #722c50;
+    align-self: flex-end;
+}
+
+#second {
+    background-color: #3b2f83;
+    align-self: center;
+}
+
+#third {
+    background-color: #c8623a;
+    height: 100%;
+}
+
+#fourth {
+    background-color: #a44831;
+    align-self: flex-start;
+}
