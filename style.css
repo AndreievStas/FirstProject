@@ -1,0 +1,125 @@
+#flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 97vh;
+}
+#flex div {
+  width: 25%;
+  height: 33.333%;
+}
+#flex .first {
+  background-color: #722c50;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+#flex .second {
+  background-color: #3b2f83;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+#flex .third {
+  background-color: #c8623a;
+  height: 100%;
+}
+#flex .fourth {
+  background-color: #a44831;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#grid {
+  position: relative;
+  top: 5vh;
+  display: -ms-grid;
+  display: grid;
+  height: 97vh;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+#grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+#grid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+#grid > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+
+#grid > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+#grid > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+#grid > *:nth-child(7) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+
+#grid > *:nth-child(8) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+}
+
+#grid > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+#grid > *:nth-child(10) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+
+#grid > *:nth-child(11) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+#grid > *:nth-child(12) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+}
+#grid .first {
+  background-color: #722c50;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+#grid .second {
+  background-color: #3b2f83;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+#grid .third {
+  background-color: #c8623a;
+  -ms-grid-row-span: 4;
+  grid-row: span 4;
+}
+#grid .fourth {
+  background-color: #a44831;
+}
